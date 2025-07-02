@@ -26,7 +26,7 @@ spring:
             require-proof-key: true
 
 server:
-  port: 9090
+  port: ${SERVER_PORT:9090}
 
 logging.level.org.springframework.security: DEBUG
 logging.level.org.springframework.security.oauth2: DEBUG
