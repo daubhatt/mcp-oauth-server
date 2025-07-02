@@ -17,12 +17,23 @@ public class UserConfig {
                 .password(passwordEncoder.encode("password"))
                 .roles("USER")
                 .build();
-        var user2 = User.withUsername("user2")
-                .password(passwordEncoder.encode("password2"))
-                .roles("ADMIN")
-                .authorities("ROLE_ADMIN")
+       var user2 = User.withUsername("Sarah")
+                .password(passwordEncoder.encode("password"))
+                .roles("USER")
                 .build();
-        return new InMemoryUserDetailsManager(user1, user2);
+        var user3 = User.withUsername("Ahmed")
+                .password(passwordEncoder.encode("password"))
+                .roles("USER")
+                .build();
+        var user4 = User.withUsername("Fatima")
+                .password(passwordEncoder.encode("password"))
+                .roles("USER")
+                .build();
+        var user5 = User.withUsername("Omar")
+                .password(passwordEncoder.encode("password"))
+                .roles("USER")
+                .build();
+        return new InMemoryUserDetailsManager(user1, user2, user3, user4, user5);
     }
 
     @Bean
