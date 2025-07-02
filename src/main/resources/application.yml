@@ -17,6 +17,7 @@ spring:
                 - "client_credentials"
               redirect-uris:
                 - "http://127.0.0.1:8080"
+                - "https://mcp-chat-client.onrender.com"
               scopes:
                 - "openid"
                 - "profile"

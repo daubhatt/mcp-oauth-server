@@ -16,7 +16,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOriginPatterns(Arrays.asList("http://127.0.0.1:8080", "http://localhost:8080"));
+        configuration.setAllowedOriginPatterns(Arrays.asList("http://127.0.0.1:8080", "http://localhost:8080", "https://mcp-chat-client.onrender.com"));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
